@@ -7,7 +7,7 @@ const fromNumber = process.env.TWILIO_FROM_NUMBER;
 
 const client = require('twilio')(accountSid, authToken);
 client.messages
-      .create({body: 'Hi there', 
+      .create({body: 'Hello World', 
       from: fromNumber, 
       to: toNumber
     })
